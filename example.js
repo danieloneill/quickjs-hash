@@ -18,6 +18,9 @@ function runTests()
 	const md5sum = hash.md5sum(data);
 	console.log(`MD5 should be bdc20bf28ed988c221cb6cfa2b417b08, got ${md5sum}`);
 	
+	const sha1sum = hash.sha1sum(data);
+	console.log(`SHA1 should be 1c94b76a3ad8b6491c4e2fcc101880dfcdea41cd, got ${sha1sum}`);
+	
 	const sha256sum = hash.sha256sum(data);
 	console.log(`SHA256 should be 4a4c36949311dfbe0cae22f498e0e4d7b714a38392681e8aff5620721aa6d98e, got ${sha256sum}`);
 }
